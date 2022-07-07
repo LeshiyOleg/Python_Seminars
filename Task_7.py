@@ -8,9 +8,12 @@
 # - 5 -> нет
 # - 0,34 -> 3
 
-
 import math
 
-print ('Введите десятичную дробь')
-number = float(input())
-print(round(int(number*10%10)))
+number = float(input('Введите десятичную дробь: '))
+if number == int(number):
+    print ('У числа нет дробной части!')
+elif number > 0:
+    print(int(number*10%10))
+else:
+    print(int((-number)*10%10))

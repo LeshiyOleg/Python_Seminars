@@ -8,12 +8,11 @@
 print('Введите число N')
 N = int(input())
 
-
+numbers = []
 if N>0:
-    for index in range(N, -N-1, -1):
-        print(index)
+    for index in range(-N, N+1, +1):
+        numbers.append(index)
 else:
-    for index in range(N, -N+1, +1):
-        print(index)
-
-
+    for index in range(-N, N-1, -1):
+        numbers.append(index)
+print(numbers)
