@@ -31,7 +31,7 @@ def find_mult_of_elem(list_of_numbers, list_of_raws):
 number_N = check ('Input number of elements N to create a list: ')
 list_of_numbers = get_list_of_numbers(number_N)
 
-file = open('file.txt' , "r")
+file = open('file_1.txt' , "r")
 data = file.read()
 list_of_raws = data.split()
 file.close()
