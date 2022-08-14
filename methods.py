@@ -56,6 +56,13 @@ def make_new_random_list_int_numbers (min_rand:int, max_rand:int):
         random_list_numbers.append(random.randint(min_rand, max_rand))
     return random_list_numbers
 
+# Функция создает список из целых чисел, запрашивает на вход количество элементов,
+# мин и макс элементы диапазона рандома.
+def make_random_list_int_numbers_n_elements (elem_number:int, min_rand:int, max_rand:int):
+    random_list_numbers = []
+    for i in range(elem_number):
+        random_list_numbers.append(random.randint(min_rand, max_rand))
+    return random_list_numbers
 
 # Функция создает список из вещественных чисел, запрашивает на вход мин и макс
 # элементы диапазона рандома. Тело функции запрашивает количество элементов в
